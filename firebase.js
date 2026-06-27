@@ -4,17 +4,16 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/fireba
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword ,  onAuthStateChanged,
   signOut } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-auth.js";
 
+const firebaseConfig = {
+  apiKey: "AIzaSyCfZQbPUqS4_A-9KEjivxc-SClQDBegNU8",
+  authDomain: "assignment-smit-c523a.firebaseapp.com",
+  projectId: "assignment-smit-c523a",
+  storageBucket: "assignment-smit-c523a.firebasestorage.app",
+  messagingSenderId: "715132384694",
+  appId: "1:715132384694:web:96a70e8990a18af5ccbd17",
+  measurementId: "G-KFSHPMQZMR"
+};
 
-
-  const firebaseConfig = {
-    apiKey: "<Enter your>",
-    authDomain: "<Enter your>",
-    projectId: "<Enter your>",
-    storageBucket: "<Enter your>",
-    messagingSenderId: "715132384694",
-    appId: "<Enter your>",
-    measurementId: "<Enter your>"
-  };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig)
 const auth = getAuth(app);

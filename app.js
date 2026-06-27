@@ -41,24 +41,24 @@ if (loginBtn) {
 
 
 
-onAuthStateChanged(auth, (user) => {
+// onAuthStateChanged(auth, (user) => {
 
-  if (user) {
-    document.getElementById("welcome").innerText =
-      `Welcome bro...`;
-       document.getElementById("msg").innerText =
-      `I am very happy that you visited my webpage ${user.email}`;
-  } else {
-    window.location.href = "index.html";
-  }
+//   if (user) {
+//     document.getElementById("welcome").innerText =
+//       `Welcome bro...`;
+//        document.getElementById("msg").innerText =
+//       `I am very happy that you visited my webpage ${user.email}`;
+//   } else {
+//     window.location.href = "index.html";
+//   }
 
-});
+// });
 
-document.getElementById("logoutBtn")
-.addEventListener("click", async () => {
+// document.getElementById("logoutBtn")
+// .addEventListener("click", async () => {
 
-  await signOut(auth);
+//   await signOut(auth);
 
-  window.location.href = "index.html";
+//   window.location.href = "index.html";
 
-});
+// });
